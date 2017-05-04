@@ -1,0 +1,44 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/Users/teeranai/Works/dotnet/ToDoApi.Tests/ToDoApi.Tests/ToDoApi.Tests.csproj",
+    "projectName": "ToDoApi.Tests",
+    "projectPath": "/Users/teeranai/Works/dotnet/ToDoApi.Tests/ToDoApi.Tests/ToDoApi.Tests.csproj",
+    "outputPath": "/Users/teeranai/Works/dotnet/ToDoApi.Tests/ToDoApi.Tests/obj/",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "netcoreapp1.1"
+    ],
+    "frameworks": {
+      "netcoreapp1.1": {
+        "projectReferences": {
+          "/Users/teeranai/Works/dotnet/ToDoApi/ToDoApi.csproj": {
+            "projectPath": "/Users/teeranai/Works/dotnet/ToDoApi/ToDoApi.csproj"
+          }
+        }
+      }
+    }
+  },
+  "frameworks": {
+    "netcoreapp1.1": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "target": "Package",
+          "version": "1.1.1"
+        },
+        "Microsoft.NET.Test.Sdk": {
+          "target": "Package",
+          "version": "15.0.0"
+        },
+        "xunit": {
+          "target": "Package",
+          "version": "2.2.0"
+        },
+        "xunit.runner.visualstudio": {
+          "target": "Package",
+          "version": "2.2.0"
+        }
+      }
+    }
+  }
+}
