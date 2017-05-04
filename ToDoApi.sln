@@ -1,11 +1,11 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.0.0
 MinimumVisualStudioVersion = 10.0.0.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoApi", "ToDoApi.csproj", "{DBD3681D-9357-49FC-B5AE-CCCDC8D1D2F5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoApi", "ToDoApi\ToDoApi.csproj", "{DBD3681D-9357-49FC-B5AE-CCCDC8D1D2F5}"
 EndProject
-Project("{7CCEDD09-9ADE-4C50-993A-FEC74CE31AA6}") = "ToDoApi.Tests", "..\ToDoApi.Tests\ToDoApi.Tests.csproj", "{4FB75364-2E21-4E9E-BF46-9D24140AEB7B}"
+Project("{7CCEDD09-9ADE-4C50-993A-FEC74CE31AA6}") = "ToDoApi.Tests", "ToDoApi.Tests\ToDoApi.Tests.csproj", "{4FB75364-2E21-4E9E-BF46-9D24140AEB7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
