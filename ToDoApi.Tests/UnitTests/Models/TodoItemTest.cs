@@ -1,7 +1,7 @@
 using ToDoApi.Models;
 using Xunit;
 
-namespace ToDoApi.Tests
+namespace ToDoApi.Tests.UnitTests.Models
 {
     public class TodoItemTest
     {
