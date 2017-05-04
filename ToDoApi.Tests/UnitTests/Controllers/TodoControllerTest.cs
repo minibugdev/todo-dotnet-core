@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Moq;
 using ToDoApi.Controllers;
 using ToDoApi.Models;
-using ToDoApi.Models.Repository;
+using ToDoApi.Repository;
 using Xunit;
 
 namespace ToDoApi.Tests.UnitTests.Controllers

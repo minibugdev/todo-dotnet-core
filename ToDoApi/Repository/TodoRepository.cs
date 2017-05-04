@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using ToDoApi.Models.Dao;
+using ToDoApi.Dao;
+using ToDoApi.Models;
 
-namespace ToDoApi.Models.Repository
+namespace ToDoApi.Repository
 {
     public class TodoRepository : ITodoRepository
     {

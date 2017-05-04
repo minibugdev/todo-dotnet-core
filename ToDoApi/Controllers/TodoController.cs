@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using ToDoApi.Models;
-using ToDoApi.Models.Repository;
+using ToDoApi.Repository;
 
 namespace ToDoApi.Controllers
 {
