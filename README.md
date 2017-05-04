@@ -18,3 +18,6 @@ This project has two kind of tests: Unit Tests and Integration Tests. For both x
 ```
 dotnet test
 ```
+
+### Manual Test by Postman
+I'm provide [Postman collection](https://github.com/minibugdev/todo-dotnet-core/blob/master/postman_collection.json) for call API. If you want to manual test you can import to your Postman.
