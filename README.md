@@ -1,4 +1,4 @@
-## Todo list project by .Net Core
+## Todo list API by .Net Core
 
 ### Getting Start
 1. Install [.Net Core](https://www.microsoft.com/net/core).
