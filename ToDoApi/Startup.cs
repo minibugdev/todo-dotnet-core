@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using System.Linq;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using ToDoApi.Models;
 using ToDoApi.Models.Dao;
 using ToDoApi.Models.Repository;
 
@@ -38,9 +40,35 @@ namespace ToDoApi
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
+            loggerFactory.AddConsole(LogLevel.Warning);
             loggerFactory.AddDebug();
 
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+
+                var repository = app.ApplicationServices.GetService<ITodoRepository>();
+                InitializeDatabase(repository);
+            }
+
             app.UseMvc();
+        }
+
+        public static Todo GetTestTodo()
+        {
+            return new Todo
+            {
+                Name = "Test Todo 1",
+            };
+        }
+
+        private static void InitializeDatabase(ITodoRepository repo)
+        {
+            var todoList = repo.GetAll();
+            if (!todoList.Any())
+            {
+                repo.Create(GetTestTodo());
+            }
         }
     }
 }
