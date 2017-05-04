@@ -1,9 +1,0 @@
-/Users/teeranai/Works/dotnet/ToDoApi/bin/Debug/netcoreapp1.1/ToDoApi.deps.json
-/Users/teeranai/Works/dotnet/ToDoApi/bin/Debug/netcoreapp1.1/ToDoApi.runtimeconfig.json
-/Users/teeranai/Works/dotnet/ToDoApi/bin/Debug/netcoreapp1.1/ToDoApi.runtimeconfig.dev.json
-/Users/teeranai/Works/dotnet/ToDoApi/bin/Debug/netcoreapp1.1/ToDoApi.dll
-/Users/teeranai/Works/dotnet/ToDoApi/bin/Debug/netcoreapp1.1/ToDoApi.pdb
-/Users/teeranai/Works/dotnet/ToDoApi/obj/Debug/netcoreapp1.1/ToDoApi.AssemblyInfo.cs
-/Users/teeranai/Works/dotnet/ToDoApi/obj/Debug/netcoreapp1.1/ToDoApi.dll
-/Users/teeranai/Works/dotnet/ToDoApi/obj/Debug/netcoreapp1.1/ToDoApi.pdb
-/Users/teeranai/Works/dotnet/ToDoApi/obj/Debug/netcoreapp1.1/ToDoApi.csprojResolveAssemblyReference.cache

@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/teeranai/Works/dotnet/ToDoApi.Tests/ToDoApi.Tests/ToDoApi.Tests.csproj",
-    "projectName": "ToDoApi.Tests",
-    "projectPath": "/Users/teeranai/Works/dotnet/ToDoApi.Tests/ToDoApi.Tests/ToDoApi.Tests.csproj",
-    "outputPath": "/Users/teeranai/Works/dotnet/ToDoApi.Tests/ToDoApi.Tests/obj/",
+    "projectUniqueName": "/Users/teeranai/Works/dotnet/ToDoApi.Test/ToDoApi.Test.csproj",
+    "projectName": "ToDoApi.Test",
+    "projectPath": "/Users/teeranai/Works/dotnet/ToDoApi.Test/ToDoApi.Test.csproj",
+    "outputPath": "/Users/teeranai/Works/dotnet/ToDoApi.Test/obj/",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp1.1"
