@@ -27,7 +27,6 @@ namespace ToDoApi.Models.Repository
 
         public void Create(Todo todo)
         {
-            todo.TodoItems = new List<TodoItem>();
             _context.Todos.Add(todo);
             _context.SaveChanges();
         }

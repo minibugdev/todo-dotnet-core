@@ -58,7 +58,7 @@ namespace ToDoApi
         {
             return new Todo
             {
-                Name = "Test Todo 1",
+                Name = "Test Todo 1"
             };
         }
 

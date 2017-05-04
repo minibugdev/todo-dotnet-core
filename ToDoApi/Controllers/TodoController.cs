@@ -40,6 +40,10 @@ namespace ToDoApi.Controllers
                 return BadRequest();
             }
 
+            if (todo.TodoItems == null)
+            {
+                todo.TodoItems = new List<TodoItem>();
+            }
             _todoRepository.Create(todo);
 
             return CreatedAtRoute("GetTodo", new {id = todo.Id}, todo);
