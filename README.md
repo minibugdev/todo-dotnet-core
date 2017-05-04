@@ -2,7 +2,7 @@
 
 ### Getting Start
 1. Install [.Net Core](https://www.microsoft.com/net/core).
-2. Clone this projec.
+2. Clone this project.
 3. Go to project directory and `restore` project dependency by
 ```
 dotnet restore
