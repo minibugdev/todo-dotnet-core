@@ -13,6 +13,8 @@ namespace ToDoApi.Models.Repository
             _context = context;
         }
 
+        #region Todo
+
         public IEnumerable<Todo> GetAll()
         {
             return _context.Todos.ToList();
@@ -43,6 +45,10 @@ namespace ToDoApi.Models.Repository
             _context.SaveChanges();
         }
 
+        #endregion
+
+        #region Todo Item
+
         public TodoItem FindItem(long id)
         {
             return _context.TodoItems.FirstOrDefault(t => t.Id == id);
@@ -67,5 +73,7 @@ namespace ToDoApi.Models.Repository
             _context.TodoItems.Update(item);
             _context.SaveChanges();
         }
+
+        #endregion
     }
 }
