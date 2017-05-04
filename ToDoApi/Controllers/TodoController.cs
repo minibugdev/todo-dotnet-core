@@ -35,7 +35,7 @@ namespace ToDoApi.Controllers
         [HttpPost]
         public IActionResult Create([FromBody] Todo todo)
         {
-            if (todo == null)
+            if (todo == null || !todo.CheckValidName())
             {
                 return BadRequest();
             }
@@ -61,7 +61,7 @@ namespace ToDoApi.Controllers
         [HttpPut("{id}")]
         public IActionResult Update(long id, [FromBody] Todo payload)
         {
-            if (payload == null)
+            if (payload == null || !payload.CheckValidName())
             {
                 return BadRequest();
             }
@@ -92,7 +92,7 @@ namespace ToDoApi.Controllers
         [HttpPost("{todoId}")]
         public IActionResult AddItem(long todoId, [FromBody] TodoItem item)
         {
-            if (item == null)
+            if (item == null || !item.CheckValidName())
             {
                 return BadRequest();
             }
@@ -126,7 +126,7 @@ namespace ToDoApi.Controllers
         [HttpPut("items/{id}")]
         public IActionResult UpdateItem(long id, [FromBody] TodoItem payload)
         {
-            if (payload == null)
+            if (payload == null || !payload.CheckValidName())
             {
                 return BadRequest();
             }

@@ -30,7 +30,7 @@ namespace ToDoApi.Tests.UnitTests.Controllers
         }
 
         [Fact]
-        public void Update_ReturnsBadRequest_GivenInvalidModel()
+        public void Update_ReturnsBadRequest_GivenNullModel()
         {
             // Arrange & Act
             const int testSessionId = 123;
@@ -40,6 +40,22 @@ namespace ToDoApi.Tests.UnitTests.Controllers
 
             // Act
             var result = controller.Update(testSessionId, payload: null);
+
+            // Assert
+            Assert.IsType<BadRequestResult>(result);
+        }
+
+        [Fact]
+        public void Update_ReturnsBadRequest_GivenInvalidName()
+        {
+            // Arrange & Act
+            const int testSessionId = 123;
+            var mockRepo = new Mock<ITodoRepository>();
+            var controller = new TodoController(mockRepo.Object);
+            controller.ModelState.AddModelError("error", "some error");
+
+            // Act
+            var result = controller.Update(testSessionId, payload: new Todo {Name = "ไม่ถูกไม่ควร"});
 
             // Assert
             Assert.IsType<BadRequestResult>(result);
@@ -56,7 +72,7 @@ namespace ToDoApi.Tests.UnitTests.Controllers
             var controller = new TodoController(mockRepo.Object);
 
             // Act
-            var result = controller.Update(testSessionId, new Todo());
+            var result = controller.Update(testSessionId, new Todo {Name = "OK"});
 
             // Assert
             Assert.IsType<NotFoundResult>(result);
