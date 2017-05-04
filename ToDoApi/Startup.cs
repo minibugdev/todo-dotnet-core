@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using ToDoApi.Dao;
 using ToDoApi.Models;
-using ToDoApi.Models.Dao;
-using ToDoApi.Models.Repository;
+using ToDoApi.Repository;
 
 namespace ToDoApi
 {
