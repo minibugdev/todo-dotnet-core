@@ -1,0 +1,146 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Todo",
+		"_postman_id": "9aa94314-90f7-b909-99c4-ccdfa7748291",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Todo: All",
+			"request": {
+				"url": "http://localhost:5000/todos",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Todo: GetById",
+			"request": {
+				"url": "http://localhost:5000/todos/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Todo: Create",
+			"request": {
+				"url": "http://localhost:5000/todos",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Todo #2\"}"
+				},
+				"description": "\t"
+			},
+			"response": []
+		},
+		{
+			"name": "Todo: Update",
+			"request": {
+				"url": "http://localhost:5000/todos/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Todo #2\"}"
+				},
+				"description": "\t"
+			},
+			"response": []
+		},
+		{
+			"name": "Todo: Delete",
+			"request": {
+				"url": "http://localhost:5000/todos/1",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Item: Add",
+			"request": {
+				"url": "http://localhost:5000/todos/2",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Item #2\"}"
+				},
+				"description": "\t"
+			},
+			"response": []
+		},
+		{
+			"name": "Item: GetById",
+			"request": {
+				"url": "http://localhost:5000/todos/items/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Item: Update",
+			"request": {
+				"url": "http://localhost:5000/todos/items/2",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Item Yo!!\",\n\t\"isComplete\":true\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Item: Delete",
+			"request": {
+				"url": "http://localhost:5000/todos/items/1",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
